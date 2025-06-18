@@ -74,6 +74,7 @@ sphinx = "*"
 sphinx-design = "*"
 sphinx-gallery = "*"
 sphinx-prompt = "*"
+myst-parser = ">=4.0.1,<5"
 
 [tool.pixi.feature.doc.tasks]
 build-doc = { cmd = "make html", cwd = "doc" }

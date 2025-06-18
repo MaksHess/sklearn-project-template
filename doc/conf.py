@@ -13,7 +13,7 @@ from importlib.metadata import version as get_version
 project = "Scikit-learn Project Template"
 copyright = "2016, V. Birodkar"
 author = "V. Birodkar"
-release = get_version('skltemplate')
+release = get_version("skltemplate")
 version = ".".join(release.split(".")[:3])
 
 # -- General configuration ---------------------------------------------------
@@ -30,6 +30,7 @@ extensions = [
     "sphinx-prompt",
     "sphinx_gallery.gen_gallery",
     "numpydoc",
+    "myst_parser",
 ]
 
 templates_path = ["_templates"]

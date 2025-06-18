@@ -48,14 +48,14 @@ skltemplate = { path=".", editable=true }
 
 [tool.pixi.feature.lint.dependencies]
 # The version below should be aligned with the one of `.pre-commit-config.yaml`
-black = "23.3.0"
-pre-commit = "3.7.1"
-ruff = "0.4.2"
+black = "==23.3.0"
+pre-commit = "==3.7.1"
+ruff = "==0.4.2"
 
 [tool.pixi.feature.lint.tasks]
 black = { cmd = "black --check --diff skltemplate && black --check --diff examples" }
 ruff = { cmd = "ruff check --output-format=full skltemplate && ruff check --output-format=full examples" }
-lint = { depends_on = ["black", "ruff"]}
+lint = { depends-on = ["black", "ruff"]}
 
 [tool.pixi.feature.test.dependencies]
 pytest = "*"
@@ -63,6 +63,7 @@ pytest-cov = "*"
 
 [tool.pixi.feature.test.tasks]
 test = { cmd = "pytest -vsl --cov=skltemplate --cov-report=xml skltemplate" }
+test-local = { cmd = "pytest -vsl --cov=skltemplate skltemplate"}
 
 [tool.pixi.feature.doc.dependencies]
 matplotlib = "*"
@@ -86,7 +87,7 @@ dev = ["doc", "lint", "test"]
 
 [tool.black]
 line-length = 88
-target_version = ['py38', 'py39', 'py310']
+target-version = ['py38', 'py39', 'py310']
 preview = true
 exclude = '''
 /(

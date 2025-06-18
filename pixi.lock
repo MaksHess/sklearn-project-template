@@ -8143,8 +8143,8 @@ packages:
   timestamp: 1620240338595
 - pypi: ./
   name: skltemplate
-  version: 0.1.2.dev8+g1e9e4d6.d20250618
-  sha256: 43567bd59905d75f7a1e7c60d71bd6e29d7abff91861bef5e5e5ddb03d96cbe7
+  version: 0.1.2.dev9+gcf94374
+  sha256: f2a34298301658a85d929c3e69eda862f83bd41d14c5cc12686ccfa3fe3dc1da
   requires_dist:
   - scikit-learn>=1.4.2
   requires_python: '>=3.9'

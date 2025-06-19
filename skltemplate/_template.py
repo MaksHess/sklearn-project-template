@@ -222,6 +222,24 @@ class TemplateClassifier(ClassifierMixin, BaseEstimator):
         return self.y_[closest]
 
 
+def and_this_function(a: int, b: str) -> tuple[int, int, str]:
+    """Another function that does stuff.
+
+    Parameters
+    ----------
+    a : int
+        best parameter.
+    b : str
+        another parameter.
+
+    Returns
+    -------
+    tuple[int, int, str]
+        just returns the input.
+    """
+    return (a, a, b)
+
+
 # Note that the mixin class should always be on the left of `BaseEstimator` to ensure
 # the MRO works as expected.
 class TemplateTransformer(TransformerMixin, BaseEstimator):

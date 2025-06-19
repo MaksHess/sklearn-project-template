@@ -22,6 +22,12 @@ from sklearn.base import (
 )
 from sklearn.utils._testing import ignore_warnings
 
+__all__ = [
+    "all_estimators",
+    "all_displays",
+    "all_functions",
+]
+
 _MODULE_TO_IGNORE = {"tests"}
 
 

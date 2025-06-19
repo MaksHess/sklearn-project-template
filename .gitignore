@@ -12,6 +12,11 @@ doc/auto_examples/
 doc/modules/generated/
 doc/datasets/generated/
 
+docs/reference
+docs/objects.json
+docs/.quarto
+docs/_site
+
 # Distribution / packaging
 
 .Python
